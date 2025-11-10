@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Declaración Individual de Compromiso Ético - CAPACITACIONES ABC CEC SPA</title>
+    <style>
+        @media print {
+            .no-print { display: none; }
+            body { margin: 0; }
+            .page-break { page-break-after: always; }
+        }
+        
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .page {
+            background: white;
+            max-width: 210mm;
+            margin: 0 auto 20px;
+            padding: 25mm;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            min-height: 297mm;
+        }
+        
+        .header {
+            border-bottom: 4px solid #0066cc;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .company-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #0066cc;
+        }
+        
+        .doc-info {
+            text-align: right;
+            font-size: 11px;
+            color: #666;
+        }
+        
+        .main-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #0066cc;
+            text-align: center;
+            margin: 30px 0 20px;
+        }
+        
+        .subtitle {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .info-box {
+            background: #e6f2ff;
+            border-left: 4px solid #0066cc;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            font-weight: bold;
+            color: #0066cc;
+            margin: 25px 0 12px;
+            border-left: 4px solid #0066cc;
+            padding-left: 10px;
+        }
+        
+        .subsection-title {
+            font-size: 14px;
+            font-weight: bold;
+            color: #0080ff;
+            margin: 15px 0 8px;
+        }
+        
+        .content {
+            text-align: justify;
+            font-size: 13px;
+            margin-bottom: 12px;
+        }
+        
+        .form-field {
+            margin: 15px 0;
+            padding: 10px;
+            background: #f9fafb;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        .form-label {
+            font-weight: bold;
+            font-size: 12px;
+            color: #0066cc;
+            margin-bottom: 5px;
+            display: block;
+        }
+        
+        .form-input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            font-size: 13px;
+            background: white;
+        }
+        
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+            font-size: 12px;
+        }
+        
+        .table th {
+            background: #0066cc;
+            color: white;
+            padding: 10px;
+            text-align: left;
+            font-size: 11px;
+        }
+        
+        .table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        
+        .table tr:nth-child(even) { background: #f9fafb; }
+        
+        .checkbox-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f9fafb;
+            border-left: 3px solid #0066cc;
+        }
+        
+        .checkbox-label {
+            font-size: 13px;
+            display: flex;
+            align-items: flex-start;
+        }
+        
+        .checkbox-label input {
+            margin-right: 10px;
+            margin-top: 3px;
+        }
+        
+        .warning-box {
+            background: #fef3c7;
+            border: 2px solid #f59e0b;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+        
+        .highlight-box {
+            background: #f0fdf4;
+            border: 2px solid #16a34a;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            font-size: 13px;
+        }
+        
+        .signature-section {
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        
+        .signature-box {
+            flex: 1;
+            text-align: center;
+        }
+        
+        .signature-line {
+            border-top: 2px solid #333;
+            margin: 60px 0 10px;
+        }
+        
+        .footer {
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #ddd;
+            font-size: 10px;
+            color: #666;
+            text-align: center;
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #0066cc;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        
+        .print-button:hover { background: #004999; }
+        
+        .editable {
+            background: #fef3c7;
+            padding: 2px 6px;
+            border-radius: 2px;
+            border-bottom: 1px dashed #f59e0b;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">🖨️ Imprimir / Guardar PDF</button>
+    
+    <!-- PÁGINA 1 -->
+    <div class="page">
+        <div class="header">
+            <div>
+                <div class="company-name">CAPACITACIONES ABC CEC SPA</div>
+            </div>
+            <div class="doc-info">
+                <strong>Documento Oficial</strong><br>
+                Código: DEC-001<br>
+                Versión: 1.0
+            </div>
+        </div>
+        
+        <div class="main-title">DECLARACIÓN INDIVIDUAL DE<br>COMPROMISO ÉTICO</div>
+        <div class="subtitle">Conforme a Ley 21.634 y Programa de Integridad Corporativo</div>
+        
+        <div class="info-box">
+            <strong>📋 INSTRUCCIONES:</strong><br>
+            Este formulario debe ser completado por <strong>TODO EL PERSONAL</strong> de CAPACITACIONES ABC CEC SPA 
+            al momento de ingreso y actualizado anualmente cada enero, o ante cualquier cambio relevante en la 
+            información declarada. La información proporcionada es confidencial y será utilizada exclusivamente 
+            para fines de compliance.
+        </div>
+        
+        <div class="section-title">1. DATOS PERSONALES DEL DECLARANTE</div>
+        
+        <div class="form-field">
+            <label class="form-label">Nombre Completo:</label>
+            <div class="editable" style="padding: 8px; min-height: 30px;">[Completar nombre completo]</div>
+        </div>
+        
+        <div style="display: flex; gap: 15px;">
+            <div class="form-field" style="flex: 1;">
+                <label class="form-label">RUT:</label>
+                <div class="editable" style="padding: 8px; min-height: 30px;">[Completar RUT]</div>
+            </div>
+            <div class="form-field" style="flex: 1;">
+                <label class="form-label">Fecha Nacimiento:</label>
+                <div class="editable" style="padding: 8px; min-height: 30px;">[DD/MM/AAAA]</div>
+            </div>
+        </div>
+        
+        <div class="form-field">
+            <label class="form-label">Cargo/Función en la Empresa:</label>
+            <div class="editable" style="padding: 8px; min-height: 30px;">[Especificar cargo]</div>
+        </div>
+        
+        <div style="display: flex; gap: 15px;">
+            <div class="form-field" style="flex: 1;">
+                <label class="form-label">Fecha Ingreso:</label>
+                <div class="editable" style="padding: 8px; min-height: 30px;">[DD/MM/AAAA]</div>
+            </div>
+            <div class="form-field" style="flex: 1;">
+                <label class="form-label">Tipo Contrato:</label>
+                <div class="editable" style="padding: 8px; min-height: 30px;">[Indefinido/Plazo Fijo/Honorarios]</div>
+            </div>
+        </div>
+        
+        <div class="form-field">
+            <label class="form-label">Email Corporativo:</label>
+            <div class="editable" style="padding: 8px; min-height: 30px;">[correo@capacitacionesabc.cl]</div>
+        </div>
+        
+        <div class="form-field">
+            <label class="form-label">Teléfono de Contacto:</label>
+            <div class="editable" style="padding: 8px; min-height: 30px;">[+56 9 XXXX XXXX]</div>
+        </div>
+        
+        <div class="section-title">2. DECLARACIÓN DE VÍNCULOS FAMILIARES</div>
+        
+        <div class="warning-box">
+            <strong>⚠️ IMPORTANTE:</strong> Debe declarar vínculos hasta 3er grado de consanguinidad y 2do de afinidad:
+            <ul style="margin-top: 8px; margin-left: 20px; font-size: 12px;">
+                <li><strong>Consanguinidad:</strong> Padres, hijos, hermanos, abuelos, nietos, tíos, sobrinos</li>
+                <li><strong>Afinidad:</strong> Cónyuge/conviviente, suegros, cuñados, yerno/nuera</li>
+            </ul>
+        </div>
+        
+        <div class="content">
+            <strong>¿Tiene usted familiares (según definición anterior) que trabajen en:</strong>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span><strong>Sector Público:</strong> Ministerios, servicios públicos, municipalidades, fuerzas armadas, 
+                Congreso, Poder Judicial, empresas del Estado</span>
+            </label>
+        </div>
+        
+        <div class="form-field" style="margin-left: 30px;">
+            <label class="form-label">Si marcó SÍ, complete:</label>
+            <table class="table">
+                <tr>
+                    <th>Nombre Familiar</th>
+                    <th>Parentesco</th>
+                    <th>Institución</th>
+                    <th>Cargo</th>
+                </tr>
+                <tr>
+                    <td class="editable" style="min-height: 30px;">&nbsp;</td>
+                    <td class="editable" style="min-height: 30px;">&nbsp;</td>
+                    <td class="editable" style="min-height: 30px;">&nbsp;</td>
+                    <td class="editable" style="min-height: 30px;">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="editable" style="min-height: 30px;">&nbsp;</td>
+                    <td class="editable" style="min-height: 30px;">&nbsp;</td>
+                    <td class="editable" style="min-height: 30px;">&nbsp;</td>
+                    <td class="editable" style="min-height: 30px;">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span><strong>Empresas competidoras:</strong> Otras empresas de capacitación o consultoría</span>
+            </label>
+        </div>
+        
+        <div class="form-field" style="margin-left: 30px;">
+            <label class="form-label">Si marcó SÍ, especifique empresa y cargo:</label>
+            <div class="editable" style="padding: 8px; min-height: 50px;">&nbsp;</div>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span><strong>Clientes actuales:</strong> Empresas u organismos que contraten servicios de CAPACITACIONES ABC CEC SPA</span>
+            </label>
+        </div>
+        
+        <div class="form-field" style="margin-left: 30px;">
+            <label class="form-label">Si marcó SÍ, especifique empresa y cargo:</label>
+            <div class="editable" style="padding: 8px; min-height: 50px;">&nbsp;</div>
+        </div>
+        
+        <div class="footer">
+            CAPACITACIONES ABC CEC SPA | Declaración Individual de Compromiso Ético | Página 1 de 3
+        </div>
+    </div>
+    
+    <!-- PÁGINA 2 -->
+    <div class="page page-break">
+        <div class="header">
+            <div>
+                <div class="company-name">CAPACITACIONES ABC CEC SPA</div>
+            </div>
+            <div class="doc-info">Página 2 de 3</div>
+        </div>
+        
+        <div class="section-title">3. DECLARACIÓN DE VÍNCULOS SOCIETARIOS</div>
+        
+        <div class="content">
+            <strong>¿Es usted socio, accionista, director o tiene participación económica en alguna empresa/sociedad?</strong>
+        </div>
+        
+        <div style="display: flex; gap: 20px; margin: 15px 0;">
+            <label style="display: flex; align-items: center; font-size: 13px;">
+                <input type="checkbox" style="margin-right: 8px;"> <strong>SÍ</strong>
+            </label>
+            <label style="display: flex; align-items: center; font-size: 13px;">
+                <input type="checkbox" style="margin-right: 8px;"> <strong>NO</strong>
+            </label>
+        </div>
+        
+        <div class="form-field">
+            <label class="form-label">Si marcó SÍ, complete la siguiente tabla:</label>
+            <table class="table">
+                <tr>
+                    <th>Razón Social</th>
+                    <th>RUT</th>
+                    <th>Rol/Cargo</th>
+                    <th>% Participación</th>
+                    <th>Giro/Actividad</th>
+                </tr>
+                <tr>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section-title">4. ACTIVIDADES PARALELAS Y OTROS EMPLEOS</div>
+        
+        <div class="content">
+            <strong>¿Realiza usted otras actividades laborales o profesionales además de su trabajo en CAPACITACIONES ABC CEC SPA?</strong>
+        </div>
+        
+        <div style="display: flex; gap: 20px; margin: 15px 0;">
+            <label style="display: flex; align-items: center; font-size: 13px;">
+                <input type="checkbox" style="margin-right: 8px;"> <strong>SÍ</strong>
+            </label>
+            <label style="display: flex; align-items: center; font-size: 13px;">
+                <input type="checkbox" style="margin-right: 8px;"> <strong>NO</strong>
+            </label>
+        </div>
+        
+        <div class="form-field">
+            <label class="form-label">Si marcó SÍ, especifique:</label>
+            <div class="editable" style="padding: 8px; min-height: 80px;">
+                [Descripción de actividad, empresa/entidad, horarios, posible conflicto de interés]
+            </div>
+        </div>
+        
+        <div class="section-title">5. RELACIONES LABORALES ANTERIORES (Últimos 24 meses)</div>
+        
+        <div class="content">
+            <strong>¿Ha trabajado en los últimos 2 años para entidades públicas o empresas competidoras?</strong>
+        </div>
+        
+        <div class="form-field">
+            <table class="table">
+                <tr>
+                    <th>Empresa/Institución</th>
+                    <th>Cargo</th>
+                    <th>Período</th>
+                    <th>Relación con sector público</th>
+                </tr>
+                <tr>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                    <td class="editable">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        
+        <div class="section-title">6. DECLARACIÓN DE CONFLICTOS DE INTERÉS CONOCIDOS</div>
+        
+        <div class="content">
+            <strong>¿Tiene usted conocimiento de alguna situación que pueda constituir o parecer un conflicto de interés 
+            con sus funciones en CAPACITACIONES ABC CEC SPA?</strong>
+        </div>
+        
+        <div style="display: flex; gap: 20px; margin: 15px 0;">
+            <label style="display: flex; align-items: center; font-size: 13px;">
+                <input type="checkbox" style="margin-right: 8px;"> <strong>SÍ</strong>
+            </label>
+            <label style="display: flex; align-items: center; font-size: 13px;">
+                <input type="checkbox" style="margin-right: 8px;"> <strong>NO</strong>
+            </label>
+        </div>
+        
+        <div class="form-field">
+            <label class="form-label">Si marcó SÍ, describa la situación en detalle:</label>
+            <div class="editable" style="padding: 8px; min-height: 100px;">&nbsp;</div>
+        </div>
+        
+        <div class="section-title">7. REGALOS Y BENEFICIOS</div>
+        
+        <div class="content">
+            <strong>¿Ha recibido en el último año regalos, beneficios o atenciones de valor superior a $50.000 
+            de parte de proveedores, clientes o terceros relacionados con su actividad en la empresa?</strong>
+        </div>
+        
+        <div style="display: flex; gap: 20px; margin: 15px 0;">
+            <label style="display: flex; align-items: center; font-size: 13px;">
+                <input type="checkbox" style="margin-right: 8px;"> <strong>SÍ</strong>
+            </label>
+            <label style="display: flex; align-items: center; font-size: 13px;">
+                <input type="checkbox" style="margin-right: 8px;"> <strong>NO</strong>
+            </label>
+        </div>
+        
+        <div class="form-field">
+            <label class="form-label">Si marcó SÍ, especifique:</label>
+            <div class="editable" style="padding: 8px; min-height: 60px;">&nbsp;</div>
+        </div>
+        
+        <div class="footer">
+            CAPACITACIONES ABC CEC SPA | Declaración Individual de Compromiso Ético | Página 2 de 3
+        </div>
+    </div>
+    
+    <!-- PÁGINA 3 -->
+    <div class="page page-break">
+        <div class="header">
+            <div>
+                <div class="company-name">CAPACITACIONES ABC CEC SPA</div>
+            </div>
+            <div class="doc-info">Página 3 de 3</div>
+        </div>
+        
+        <div class="section-title">8. COMPROMISO ÉTICO</div>
+        
+        <div class="content">
+            Yo, <span class="editable">[Nombre completo]</span>, RUT <span class="editable">[RUT]</span>, 
+            declaro bajo juramento que:
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Toda la información proporcionada en esta declaración es <strong>verdadera, completa y actualizada</strong></span>
+            </label>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>He leído, entendido y me comprometo a cumplir el <strong>Programa de Integridad y Cumplimiento</strong> 
+                de CAPACITACIONES ABC CEC SPA</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Conozco y acepto las <strong>Políticas de Conflicto de Interés y Anti-Corrupción</strong> de la empresa</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Me comprometo a <strong>actuar con integridad, transparencia y respeto</strong> a la legislación vigente</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Me comprometo a <strong>declarar inmediatamente</strong> cualquier cambio en mi situación que pueda 
+                generar conflicto de interés</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Me comprometo a <strong>reportar</strong> cualquier irregularidad o incumplimiento ético que conozca 
+                a través del Canal de Denuncias</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Entiendo que <strong>NO puedo participar</strong> en decisiones donde tenga conflicto de interés sin 
+                autorización expresa del Comité de Ética</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Acepto que el <strong>incumplimiento</strong> de este compromiso puede resultar en sanciones disciplinarias, 
+                incluyendo terminación de contrato</span>
+            </label>
+        </div>
+        
+        <div class="checkbox-item">
+            <label class="checkbox-label">
+                <input type="checkbox">
+                <span>Autorizo a CAPACITACIONES ABC CEC SPA a <strong>verificar</strong> la información aquí declarada en bases 
+                de datos públicas y fuentes oficiales</span>
+            </label>
+        </div>
+        
+        <div class="highlight-box" style="margin-top: 25px;">
+            <strong>✓ PROTECCIÓN DE DATOS PERSONALES:</strong><br>
+            La información proporcionada será tratada confidencialmente conforme a la Ley 19.628 de Protección de Datos Personales. 
+            Será utilizada exclusivamente para fines de compliance, prevención de conflictos de interés y cumplimiento legal. 
+            Usted tiene derecho a acceder, rectificar y cancelar sus datos contactando al Oficial de Cumplimiento.
+        </div>
+        
+        <div class="section-title">9. FIRMA Y FECHA</div>
+        
+        <div class="signature-section">
+            <div class="signature-box">
+                <div class="signature-line"></div>
+                <div style="font-weight: bold; margin-top: 10px;"><span class="editable">[Nombre del Declarante]</span></div>
+                <div style="font-size: 12px; color: #666;">RUT: <span class="editable">[RUT]</span></div>
+                <div style="font-size: 12px; color: #666;">Cargo: <span class="editable">[Cargo]</span></div>
+                <div style="font-size: 12px; color: #666; margin-top: 10px;">
+                    Fecha: <span class="editable">[DD/MM/AAAA]</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="warning-box" style="margin-top: 40px;">
+            <strong>⚠️ INSTRUCCIONES DE ENTREGA:</strong><br><br>
+            1. Complete todos los campos marcados en amarillo<br>
+            2. Firme en el espacio indicado<br>
+            3. Envíe este documento a: <strong>cumplimiento@capacitacionesabc.cl</strong><br>
+            4. Conserve una copia para su registro personal<br>
+            5. Actualice esta declaración ante cualquier cambio relevante (plazo: 10 días corridos)
+        </div>
+        
+        <div class="info-box" style="margin-top: 20px;">
+            <strong>📞 CONSULTAS:</strong><br>
+            Oficial de Cumplimiento: <span class="editable">[Nombre]</span><br>
+            Email: <span class="editable">cumplimiento@capacitacionesabc.cl</span><br>
+            Teléfono: <span class="editable">[Número]</span>
+        </div>
+        
+        <div class="footer" style="margin-top: 50px;">
+            CAPACITACIONES ABC CEC SPA | Declaración Individual de Compromiso Ético | Página 3 de 3<br>
+            DOCUMENTO CONFIDENCIAL - USO EXCLUSIVO COMPLIANCE
+        </div>
+    </div>
+    
+</body>
+</html>
